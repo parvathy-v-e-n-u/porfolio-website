@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f1ed;
+    color:#222;
+}
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:240px;
+    height:100vh;
+    background:#f4f1ed;
+    border-right:1px solid #ddd;
+    padding:50px 30px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#6d4c7d;
+    margin-bottom:60px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:25px 0;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:18px;
+    transition:.3s;
+}
+
+.sidebar ul li a:hover{
+    color:#6d4c7d;
+    padding-left:8px;
+}
+
+.active{
+    color:#6d4c7d !important;
+    font-weight:600;
+}
+
+.main{
+    margin-left:240px;
+    min-height:100vh;
+    padding:60px;
+}
+
+.page-title{
+    font-size:70px;
+    color:#d6cabd;
+    line-height:0.9;
+    font-family:Georgia,serif;
+}
+
+.section-heading{
+    color:#6d4c7d;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+.hero-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:80vh;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:400px;
+    height:500px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.name{
+    font-size:65px;
+    color:#6d4c7d;
+}
+.contact-grid{
+    margin-top:60px;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+}
+
+.contact-card{
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+}
+
+.contact-card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#6d4c7d;
+}
+.about{
+    font-size: 16px;
+    width: 500px;
+}
