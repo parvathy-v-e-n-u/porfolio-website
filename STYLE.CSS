@@ -7,9 +7,15 @@
     font-family:'Poppins',sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#f4f1ed;
     color:#222;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 
 .sidebar{
@@ -58,6 +64,7 @@ body{
 .main{
     margin-left:240px;
     padding:60px;
+    min-height:100vh;
 }
 
 .page-title{
@@ -79,6 +86,7 @@ body{
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
+
 .hero-section{
     display:flex;
     justify-content:space-between;
@@ -109,30 +117,22 @@ body{
     font-size:65px;
     color:#6d4c7d;
 }
+
 .contact-grid{
     margin-top:60px;
-
     display:grid;
     grid-template-columns:repeat(2,1fr);
-
     gap:30px;
 }
 
 .contact-card{
     background:white;
-
     padding:40px;
-
     border-radius:20px;
-
     text-decoration:none;
-
     color:#333;
-
     text-align:center;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
     transition:.3s;
 }
 
@@ -144,27 +144,75 @@ body{
     width:90px;
     height:90px;
     object-fit:contain;
-
     margin-bottom:20px;
 }
 
-.card h3{
+.contact-card h3{
     color:#6d4c7d;
 }
+
 .about{
-    font-size: 16px;
-    width: 500px;
-}
-html{
-    scroll-behavior:smooth;
+    font-size:16px;
+    width:500px;
 }
 
-body{
-    overflow-x:hidden;
-    overflow-y:auto;
-}
+/* MOBILE */
 
-.main{
-    min-height:100vh;
-    height:auto;
-}
+@media screen and (max-width:768px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+        padding:20px;
+    }
+
+    .logo{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .sidebar ul{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .sidebar ul li{
+        margin:0;
+    }
+
+    .main{
+        margin-left:0;
+        padding:25px;
+    }
+
+    .page-title{
+        font-size:48px;
+    }
+
+    .hero-section{
+        flex-direction:column;
+        text-align:center;
+        min-height:auto;
+    }
+
+    .hero-image img{
+        width:280px;
+        height:auto;
+    }
+
+    .name{
+        font-size:42px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        width:100%;
+    }
